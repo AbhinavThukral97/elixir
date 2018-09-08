@@ -33,7 +33,7 @@ body{
   position: relative;
   right:0;
   margin: auto;
-  background: $textdark;
+  background: #3c1d2c;
   @include transition(.5s);
 }
 
@@ -44,7 +44,7 @@ body{
 header.shadow
 {
   height: 70px;
-  box-shadow: 0 0 70px rgba(0,0,0,.1);
+  box-shadow: 0 0 25px rgba(0,0,0,.2);
 }
 
 header
@@ -63,20 +63,26 @@ header
 
   .link
   {
-    font-size: .8em;
-    color: rgba(255,255,255,.5);
+    font-size: .7em;
+    color: rgba(255,255,255,.75);
     font-weight: 600;
-    padding: 5px 5px;
-    margin: 0px 20px;
+    padding: 5px 3px;
+    margin: 0px 15px;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     @include transition(.5s);
+
+    i[class^='fa']
+    {
+      margin-right: 5px;
+      color: $dustgreen;
+    }
   }
 
   .link:hover
   {
     color: #FFF;
-    border-bottom: 3px solid $orange;
+    border-bottom: 2px solid $orange;
   }
 
   .mobile-menu
@@ -97,20 +103,26 @@ nav
   position: fixed;
   top: 0;
   right: -100%;
-  background: $textdark;
+  background: #3c1d2c;
   z-index: 1000;
   @include transition(.5s);
 
   .link
   {
     font-size: 1em;
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.9);
     font-weight: 600;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
+    border-bottom: 1px solid rgba(255,255,255,.05);
     @include transition(.5s);
     width: 100%;
     padding: 20px 25px;
+
+    i[class^='fa']
+    {
+      margin-right: 5px;
+      color: $yellow;
+    }
   }
 
   .link:first-of-type

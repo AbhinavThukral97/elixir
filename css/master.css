@@ -6,7 +6,7 @@ body {
   position: relative;
   right: 0;
   margin: auto;
-  background: #495863;
+  background: #3c1d2c;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -17,8 +17,8 @@ body {
 
 header.shadow {
   height: 70px;
-  -webkit-box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); }
 
 header {
   position: fixed;
@@ -42,20 +42,23 @@ header {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   header .link {
-    font-size: .8em;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: .7em;
+    color: rgba(255, 255, 255, 0.75);
     font-weight: 600;
-    padding: 5px 5px;
-    margin: 0px 20px;
+    padding: 5px 3px;
+    margin: 0px 15px;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
+    header .link i[class^='fa'] {
+      margin-right: 5px;
+      color: #9D6A2A; }
   header .link:hover {
     color: #FFF;
-    border-bottom: 3px solid #EF5324; }
+    border-bottom: 2px solid #EF5324; }
   header .mobile-menu {
     position: absolute;
     top: 50%;
@@ -72,7 +75,7 @@ nav {
   position: fixed;
   top: 0;
   right: -100%;
-  background: #495863;
+  background: #3c1d2c;
   z-index: 1000;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -80,16 +83,19 @@ nav {
   transition: all 0.5s ease; }
   nav .link {
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 100%;
     padding: 20px 25px; }
+    nav .link i[class^='fa'] {
+      margin-right: 5px;
+      color: #F99F1F; }
   nav .link:first-of-type {
     margin-top: 20px; }
 

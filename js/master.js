@@ -33,35 +33,35 @@ $(document).ready(function(){
 
   function navOpen(){
     $('nav').css('right','0');
-    $('.intro').css('right','200px');
-      $('body').css('right','200px');
-      $('header').css('right','200px');
+    $('.intro').css('right','199px');
+      $('body').css('right','199px');
+      $('header').css('right','199px');
       nav = true;
   }
 
   $('.home-link').click(function(){
     var  i = 0;
-    $('body, html').animate({scrollTop: i - 70}, 1000);
+    $('body, html').animate({scrollTop: i - 69}, 1000);
     navClose();
   });
   $('.about-link').click(function(){
     var  i = $('.about').offset().top;
-    $('body, html').animate({scrollTop: i - 70}, 1000);
+    $('body, html').animate({scrollTop: i - 69}, 1000);
     navClose();
   });
   $('.activities-link').click(function(){
     var  i = $('.activities-panel').offset().top;
-    $('body, html').animate({scrollTop: i - 70}, 1000);
+    $('body, html').animate({scrollTop: i - 69}, 1000);
     navClose();
   });
   $('.join-link').click(function(){
     var  i = $('.join-panel').offset().top;
-    $('body, html').animate({scrollTop: i - 70}, 1000);
+    $('body, html').animate({scrollTop: i - 69}, 1000);
     navClose();
   });
   $('.connect-link').click(function(){
     var  i = $('.contact').offset().top;
-    $('body, html').animate({scrollTop: i - 70}, 1000);
+    $('body, html').animate({scrollTop: i - 69}, 1000);
     navClose();
   });
 
