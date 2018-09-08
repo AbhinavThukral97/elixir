@@ -192,7 +192,7 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .activities-panel {
-  padding: 100px 0px;
+  padding: 150px 0px;
   background: url("../img/Back1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ p {
       margin: 10px 0px; }
 
 .join-panel {
-  padding: 100px 0px;
+  padding: 150px 0px;
   background: url("../img/Back2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
