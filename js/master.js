@@ -8,12 +8,19 @@ $(document).ready(function(){
     $('h2').css('top','0px');
     $('h2').css('opacity','1');
   },750);
+
+  a = $('.activities-panel').offset().top;
+  j = $('.join-panel').offset().top;
+  h = $(window).height();
+  console.log(a,j,h);
   $(window).scroll(function(){
    i = $(window).scrollTop();
    if(i>0)
     $('header').addClass('shadow');
   else
     $('header').removeClass('shadow');
+    $('.activities-panel').css('background-position','center ' + (a-i-h)/5 +'px');
+    $('.join-panel').css('background-position','center ' + (j-i-h)/5 +'px');
   });
   // console.log('Running');
   // $(window).scroll(function(){

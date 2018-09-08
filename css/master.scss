@@ -78,8 +78,8 @@ header
 
 section.intro
 {
-/*  position: fixed;
-  top: 0;*/
+  position: fixed;
+  top: 0;
   height: 100vh;
   width: 100%;
   background: $maroon;
@@ -137,7 +137,7 @@ h2
 
 .about
 {
-/*  margin-top: 100vh;*/
+  margin-top: 100vh;
   padding: 100px 0px;
   background: #FFF;
 }
@@ -181,6 +181,7 @@ p
   background: url('../img/Back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #222;
 
   h1 
@@ -236,6 +237,7 @@ p
   background: url('../img/Back2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #222;
 
   h1 
@@ -342,7 +344,7 @@ p
 
     .fab:hover,.far:hover
     {
-      color: $yellow;
+      color: $orange;
     }
   }
 }

@@ -51,8 +51,8 @@ header {
     border-bottom: 3px solid #EF5324; }
 
 section.intro {
-  /*  position: fixed;
-  top: 0;*/
+  position: fixed;
+  top: 0;
   height: 100vh;
   width: 100%;
   background: #4D2638;
@@ -112,7 +112,7 @@ h2 {
     width: 100%; }
 
 .about {
-  /*  margin-top: 100vh;*/
+  margin-top: 100vh;
   padding: 100px 0px;
   background: #FFF; }
 
@@ -148,6 +148,7 @@ p {
   background: url("../img/Back1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #222; }
   .activities-panel h1 {
     opacity: 1;
@@ -190,6 +191,7 @@ p {
   background: url("../img/Back2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center 0px;
   background-color: #222; }
   .join-panel h1 {
     opacity: 1;
@@ -272,7 +274,7 @@ p {
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
     .contact .social-wrapper .fab:hover, .contact .social-wrapper .far:hover {
-      color: #F99F1F; }
+      color: #EF5324; }
 
 footer {
   padding-bottom: 30px;
