@@ -333,7 +333,8 @@ p {
       color: #EF5324; }
 
 footer {
-  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 40px;
   background: #1d252c;
   text-align: center;
   font-size: .6em;
