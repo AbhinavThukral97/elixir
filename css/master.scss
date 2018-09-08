@@ -30,7 +30,11 @@ a
 }
 
 body{
+  position: relative;
+  right:0;
   margin: auto;
+  background: $textdark;
+  @include transition(.5s);
 }
 
 *{
@@ -47,7 +51,7 @@ header
 {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100px;
   background: $maroon;
@@ -73,6 +77,45 @@ header
   {
     color: #FFF;
     border-bottom: 3px solid $orange;
+  }
+
+  .mobile-menu
+  {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0,-50%);
+    display: none;
+    color: #FFF;
+  }
+}
+
+nav 
+{
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background: $textdark;
+  z-index: 1000;
+  @include transition(.5s);
+
+  .link
+  {
+    font-size: 1em;
+    color: rgba(255,255,255,.5);
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    @include transition(.5s);
+    width: 100%;
+    padding: 20px 25px;
+  }
+
+  .link:first-of-type
+  {
+    margin-top: 20px;
   }
 }
 
@@ -177,7 +220,7 @@ p
 
 .activities-panel
 {
-  padding: 150px 0px;
+  padding: 100px 0px;
   background: url('../img/Back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,7 +276,7 @@ p
 
 .join-panel
 {
-  padding: 150px 0px;
+  padding: 100px 0px;
   background: url('../img/Back2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,7 +382,7 @@ p
       padding: 15px;
       margin: 15px;
       color: #FFF;
-      font-size: 2em;
+      font-size: 1.5em;
       cursor: pointer;
       @include transition(.5s);
     }
@@ -362,5 +405,78 @@ footer
   b 
   {
     color: $red;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .content
+  {
+    width: 80%;
+  }
+
+  body
+  {
+    font-size: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+
+  .content
+  {
+    width: 90%;
+  }
+
+  body
+  {
+    font-size: 80%;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+
+  .content
+  {
+    width: 90%;
+  }
+
+  body
+  {
+    font-size: 75%;
+  }
+
+  header
+  {
+    .link
+    {
+      display: none;
+    }
+
+    .mobile-menu
+    {
+      display: block;
+    }
+  }
+
+  .join 
+  {
+    flex-wrap: wrap;
+
+    .split-1,.split-2
+    {
+      width: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+
+  body  
+  {
+    font-size: 70%;
   }
 }
