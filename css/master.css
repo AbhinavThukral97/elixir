@@ -93,9 +93,10 @@ nav {
   nav .link:first-of-type {
     margin-top: 20px; }
 
-section.intro {
+.intro {
   position: fixed;
   top: 0;
+  right: 0;
   height: 100vh;
   width: 100%;
   background: #4D2638;
@@ -105,7 +106,11 @@ section.intro {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .content {
   width: 70%;

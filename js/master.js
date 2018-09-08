@@ -23,60 +23,55 @@ $(document).ready(function(){
     // $('.join-panel').css('background-position','center ' + (j-i-h)/5 +'px');
   });
 
+  function navClose(){
+      $('nav').css('right','-200px');
+      $('body').css('right','0px');
+      $('.intro').css('right','0px');
+      $('header').css('right','0px');
+      nav = false;
+  }
+
+  function navOpen(){
+    $('nav').css('right','0');
+    $('.intro').css('right','200px');
+      $('body').css('right','200px');
+      $('header').css('right','200px');
+      nav = true;
+  }
+
   $('.home-link').click(function(){
     var  i = 0;
     $('body, html').animate({scrollTop: i - 70}, 1000);
-    $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+    navClose();
   });
   $('.about-link').click(function(){
     var  i = $('.about').offset().top;
     $('body, html').animate({scrollTop: i - 70}, 1000);
-    $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+    navClose();
   });
   $('.activities-link').click(function(){
     var  i = $('.activities-panel').offset().top;
     $('body, html').animate({scrollTop: i - 70}, 1000);
-    $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+    navClose();
   });
   $('.join-link').click(function(){
     var  i = $('.join-panel').offset().top;
     $('body, html').animate({scrollTop: i - 70}, 1000);
-    $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+    navClose();
   });
   $('.connect-link').click(function(){
     var  i = $('.contact').offset().top;
     $('body, html').animate({scrollTop: i - 70}, 1000);
-    $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+    navClose();
   });
 
   nav = false;
   $('.mobile-menu').click(function(){
     if(nav){
-      $('nav').css('right','-200px');
-      $('body').css('right','0px');
-      $('header').css('right','0px');
-      nav = false;
+      navClose();
     }
     else{
-      $('nav').css('right','0');
-      $('body').css('right','200px');
-      $('header').css('right','200px');
-      nav = true;
+      navOpen();
     }
   });
 });
