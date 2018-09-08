@@ -196,7 +196,7 @@ p {
   background: url("../img/Back1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0px;
+  background-position: center center;
   background-color: #222; }
   .activities-panel h1 {
     opacity: 1;
@@ -239,7 +239,7 @@ p {
   background: url("../img/Back2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0px;
+  background-position: center center;
   background-color: #222; }
   .join-panel h1 {
     opacity: 1;
