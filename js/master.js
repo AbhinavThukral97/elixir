@@ -1,18 +1,6 @@
 $(document).ready(function(){
-  $('.logo').css('transform','scale(1)');
-  setTimeout(function(){
-    $('h1').css('top','0px');
-    $('h1').css('opacity','1');
-  },500);
-  setTimeout(function(){
-    $('h2').css('top','0px');
-    $('h2').css('opacity','1');
-  },750);
+  console.log('JavaScript Running');
 
-  a = $('.activities-panel').offset().top;
-  j = $('.join-panel').offset().top;
-  h = $(window).height();
-  console.log(a,j,h);
   $(window).scroll(function(){
    i = $(window).scrollTop();
    if(i>0)
@@ -74,4 +62,21 @@ $(document).ready(function(){
       navOpen();
     }
   });
+
+  $('.logo').css('transform','scale(1)');
+  setTimeout(function(){
+    $('h1').css('top','0px');
+    $('h1').css('opacity','1');
+  },500);
+  setTimeout(function(){
+    $('h2').css('top','0px');
+    $('h2').css('opacity','1');
+  },750);
+
+  a = $('.activities-panel').offset().top;
+  j = $('.join-panel').offset().top;
+  h = $(window).height();
+  console.log(a,j,h);
+
+
 });
